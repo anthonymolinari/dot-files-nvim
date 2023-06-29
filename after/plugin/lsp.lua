@@ -7,6 +7,8 @@ lsp.ensure_installed({
 	'eslint',
 	'rust_analyzer',
 	'gopls',
+    'dockerls',
+    'cssls',
 })
 
 local cmp = require('cmp')
