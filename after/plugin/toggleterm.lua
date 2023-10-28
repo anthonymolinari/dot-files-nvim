@@ -8,4 +8,3 @@ tg.setup{
     direction = 'horizontal',
 }
 
-
