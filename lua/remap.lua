@@ -5,8 +5,5 @@ vim.g.mapleader = " "
 -- open a new split of the current focused window
 vim.keymap.set("n", "<leader>ns", vim.cmd.split) 
 
--- tabs stuff
 -- new tab
 vim.keymap.set("n", "<leader>nn", vim.cmd.tabnew) 
--- cycle tab
-vim.keymap.set("n", "<leader>ll", vim.cmd.tabnext)
