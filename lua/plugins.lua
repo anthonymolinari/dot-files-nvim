@@ -14,24 +14,32 @@ return require('packer').startup(function(use)
   }
 
   use {
+      'nvim-tree/nvim-web-devicons'
+  }
+
+  use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  use({
-	'rose-pine/neovim',
-	as = 'rose-pine',
-	--config = function()
-	--	vim.cmd('colorscheme rose-pine')
-	-- end
-  })
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = { 'nvim-tree/nvim-web-devicons' }
+  }
 
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use {
+    "ellisonleao/gruvbox.nvim"
+  }
+
   use ({
     "neanias/everforest-nvim",
     config = function()
         require("everforest").setup()
     end,
+  })
+
+  use ({
+      'rose-pine/neovim', as = 'rose-pine'
   })
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
