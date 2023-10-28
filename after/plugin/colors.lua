@@ -24,4 +24,4 @@ local function use_scheme(theme_name)
 
 end
 
-use_scheme('moonlight')
+use_scheme('aquarium')

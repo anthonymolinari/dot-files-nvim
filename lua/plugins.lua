@@ -12,30 +12,49 @@ return require('packer').startup(function(use)
 	requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use {
-      'nvim-tree/nvim-web-devicons'
-  }
+  use {'nvim-tree/nvim-web-devicons'}
 
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  use {
-    'lewis6991/gitsigns.nvim'
-  }
+  use {'lewis6991/gitsigns.nvim'}
+
+  use {'romgrk/barbar.nvim'}
 
   use {
-    'romgrk/barbar.nvim'
+      'nvim-neo-tree/neo-tree.nvim',
+      branch = "v3.x",
+      requires = {
+          "nvim-lua/plenary.nvim",
+          "nvim-tree/nvim-web-devicons",
+          "MunifTanjim/nui.nvim",
+          {
+              'sin7ax/nvim-window-picker',
+              version = '2.*',
+              config = function()
+                  require 'window-picker'.setup({
+                      filter_rules = {
+                          include_current_win = false,
+                          autoselect_one = true,
+                          bo = {
+                              filetype = { 'neo-tree', 'neo-tree-popup', 'notify' },
+                              buftype = { 'terminal', 'quickfix' },
+                          },
+                      },
+                  })
+              end,
+          },
+      },
   }
-
-  use {
-    'timuntersberger/neofs'
-  }
---[[
+  --[[
   use {
     'nvim-tree/nvim-tree.lua',
     requires = { 'nvim-tree/nvim-web-devicons' }
+  }
+  use {
+    'timuntersberger/neofs'
   }
   ]]--
   use {

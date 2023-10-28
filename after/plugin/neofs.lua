@@ -1,3 +1,4 @@
+--[[
 local neofs = require('neofs')
 
 neofs.setup({
@@ -7,3 +8,4 @@ neofs.setup({
 vim.keymap.set("n", "<leader>pv", function()
     neofs.open()
 end, {noremap = true})
+]]--
