@@ -1,9 +1,9 @@
 require('lualine').setup {
   options = {
-    icons_enabled = false, -- fix icons 
+    icons_enabled = true, -- fix icons 
     theme = 'auto',
-    component_separators = '',
-    section_separators = '|',
+    component_separators = '|',
+    section_separators = '',
     disabled_filetypes = {
       statusline = {},
       winbar = {},

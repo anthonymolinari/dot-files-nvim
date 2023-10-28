@@ -30,10 +30,14 @@ return require('packer').startup(function(use)
   }
 
   use {
+    'timuntersberger/neofs'
+  }
+--[[
+  use {
     'nvim-tree/nvim-tree.lua',
     requires = { 'nvim-tree/nvim-web-devicons' }
   }
-
+  ]]--
   use {
     "ellisonleao/gruvbox.nvim"
   }
@@ -50,13 +54,15 @@ return require('packer').startup(function(use)
   })
 
   use ({
-      "iamcco/markdown-preview.nvim",
-      run = function() cim.fn["mkdp#util#install"]() end,
+      'shaunsingh/moonlight.nvim'
+  })
+
+  use ({
+      'frenzyexists/aquarium-vim'
   })
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use('nvim-treesitter/playground')
-  use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use {

@@ -1,5 +1,4 @@
 local function use_scheme(theme_name)
-
     if theme_name == "rose-pine" then
         vim.cmd([[colorscheme gruvbox]])
     elseif theme_name == "everforest" then
@@ -17,7 +16,12 @@ local function use_scheme(theme_name)
             disable_italics = true,
         })
         vim.cmd([[colorscheme rose-pine]])
+    elseif theme_name == "moonlight" then
+        vim.cmd([[colorscheme moonlight]])
+    elseif theme_name == "aquarium" then
+        vim.cmd([[colorscheme aquarium]])
     end
+
 end
 
-use_scheme('everforest')
+use_scheme('moonlight')
