@@ -2,6 +2,7 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- neo_tree config
 local neo_tree = require('neo-tree')
 
 neo_tree.setup({
@@ -14,7 +15,7 @@ neo_tree.setup({
     sort_case_insensitive = false,
     sort_function = nil,
     window = {
-        position = "float",
+        position = "current",
         mapping_options = {
             noremap = true,
             nowait = true,
@@ -36,6 +37,6 @@ neo_tree.setup({
 })
 local opts = { noremap = true, nowait = true } 
 
-vim.keymap.set('n', '<C-b>', "<cmd>Neotree filesystem reveal left<CR>", opts)
+vim.keymap.set('n', '<C-b>', "<cmd>Neotree filesystem reveal toggle left<CR>", opts)
 vim.keymap.set('n', '<leader>fs', "<cmd>Neotree filesystem reveal float<CR>", opts)
 
