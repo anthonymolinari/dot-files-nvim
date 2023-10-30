@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 -- disable netrw
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -35,8 +36,8 @@ neo_tree.setup({
         }
     },
 })
-local opts = { noremap = true, nowait = true } 
+local opts = { noremap = true, nowait = true }
 
 vim.keymap.set('n', '<C-b>', "<cmd>Neotree filesystem reveal toggle left<CR>", opts)
 vim.keymap.set('n', '<leader>fs', "<cmd>Neotree filesystem reveal float<CR>", opts)
-
+vim.keymap.set('n', '<leader>pv', "<cmd>Neotree filesystem reveal current<CR>", opts)

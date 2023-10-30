@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
