@@ -20,6 +20,19 @@ local function use_scheme(theme_name)
         vim.cmd([[colorscheme moonlight]])
     elseif theme_name == "aquarium" then
         vim.cmd([[colorscheme aquarium]])
+    elseif theme_name == "melange" then
+        vim.cmd([[colorscheme melange ]])
+    elseif theme_name == "catpuccin" then
+        require('catpuccin').setup({
+            flavour = "mocha",
+            background = {
+                dark = "mocha"
+            },
+        })
+        vim.cmd([[colorscheme catpuccin ]])
+    elseif theme_name == "kanagawa" then
+        -- options: wave, lotus, dragon
+        vim.cmd([[colorscheme kanagawa-wave]])
     end
 
 end
