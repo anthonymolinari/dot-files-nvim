@@ -8,6 +8,8 @@ lsp.ensure_installed({
 	'rust_analyzer',
     'dockerls',
     'cssls',
+    'zls',
+    'lua_ls',
 })
 
 local cmp = require('cmp')
