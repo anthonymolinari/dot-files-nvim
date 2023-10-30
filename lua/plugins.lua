@@ -7,6 +7,10 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use { 'nvim-lua/plenary.nvim' }
+
+  use { 'j-morano/buffer_manager.nvim' }
+
   use {
 	'nvim-telescope/telescope.nvim', tag = '0.1.1',
 	requires = { {'nvim-lua/plenary.nvim'} }
@@ -21,7 +25,10 @@ return require('packer').startup(function(use)
 
   use {'lewis6991/gitsigns.nvim'}
 
-  use {'romgrk/barbar.nvim'}
+  -- disabled 
+  use {'romgrk/barbar.nvim', disable=true }
+
+  use { 'nanozuki/tabby.nvim' }
 
   use {
       'nvim-neo-tree/neo-tree.nvim',
@@ -48,17 +55,8 @@ return require('packer').startup(function(use)
           },
       },
   }
-  --[[
-  use {
-    'nvim-tree/nvim-tree.lua',
-    requires = { 'nvim-tree/nvim-web-devicons' }
-  }
-  use {
-    'timuntersberger/neofs'
-  }
-  ]]--
-  -- themes
 
+  -- themes
   use ({
     "neanias/everforest-nvim",
     config = function()
@@ -69,7 +67,7 @@ return require('packer').startup(function(use)
   use { 'rose-pine/neovim', as = 'rose-pine' }
   use { 'shaunsingh/moonlight.nvim' }
   use { 'frenzyexists/aquarium-vim' }
-  use { 'catppuccin/nvim', as = 'catpuccin'} 
+  use { 'catppuccin/nvim', as = 'catpuccin' }
   use { 'rebelot/kanagawa.nvim' }
   use { 'savq/melange-nvim' }
 
