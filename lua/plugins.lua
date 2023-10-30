@@ -10,7 +10,8 @@ return require('packer').startup(function(use)
 
   use { 'nvim-lua/plenary.nvim' }
 
-  use { 'j-morano/buffer_manager.nvim' }
+  use { 'j-morano/buffer_manager.nvim', disable=true }
+  use { 'matbme/JABS.nvim'}
 
   use {
 	'nvim-telescope/telescope.nvim', tag = '0.1.1',
@@ -39,8 +40,8 @@ return require('packer').startup(function(use)
           "nvim-tree/nvim-web-devicons",
           "MunifTanjim/nui.nvim",
           {
-              'sin7ax/nvim-window-picker',
-              tag = 'v2.*',
+              's1n7ax/nvim-window-picker',
+              tag = '2.*',
               config = function()
                   require 'window-picker'.setup({
                       filter_rules = {
