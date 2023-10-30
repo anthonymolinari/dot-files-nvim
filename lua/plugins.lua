@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
           "MunifTanjim/nui.nvim",
           {
               'sin7ax/nvim-window-picker',
-              version = '2.*',
+              tag = 'v2.*',
               config = function()
                   require 'window-picker'.setup({
                       filter_rules = {
@@ -57,9 +57,7 @@ return require('packer').startup(function(use)
     'timuntersberger/neofs'
   }
   ]]--
-  use {
-    "ellisonleao/gruvbox.nvim"
-  }
+  -- themes
 
   use ({
     "neanias/everforest-nvim",
@@ -67,18 +65,13 @@ return require('packer').startup(function(use)
         require("everforest").setup()
     end,
   })
-
-  use ({
-      'rose-pine/neovim', as = 'rose-pine'
-  })
-
-  use ({
-      'shaunsingh/moonlight.nvim'
-  })
-
-  use ({
-      'frenzyexists/aquarium-vim'
-  })
+  use { "ellisonleao/gruvbox.nvim" }
+  use { 'rose-pine/neovim', as = 'rose-pine' }
+  use { 'shaunsingh/moonlight.nvim' }
+  use { 'frenzyexists/aquarium-vim' }
+  use { 'catppuccin/nvim', as = 'catpuccin'} 
+  use { 'rebelot/kanagawa.nvim' }
+  use { 'savq/melange-nvim' }
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use('nvim-treesitter/playground')
