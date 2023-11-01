@@ -37,4 +37,4 @@ local function use_scheme(theme_name)
 
 end
 
-use_scheme('aquarium')
+use_scheme('everforest')

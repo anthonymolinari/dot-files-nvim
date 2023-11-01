@@ -8,13 +8,17 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- plugin development
+  use {'/home/anthony/Programming/latex_preview.nvim', disable=true}
+  -- end development plugins
+
   use { 'nvim-lua/plenary.nvim' }
 
   use { 'j-morano/buffer_manager.nvim', disable=true }
   use { 'matbme/JABS.nvim'}
 
   use {
-	'nvim-telescope/telescope.nvim', tag = '0.1.1',
+	'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	requires = { {'nvim-lua/plenary.nvim'} }
   }
 
