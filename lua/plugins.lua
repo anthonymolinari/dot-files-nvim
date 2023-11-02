@@ -31,11 +31,6 @@ return require('packer').startup(function(use)
 
   use {'lewis6991/gitsigns.nvim'}
 
-  -- disabled 
-  use {'romgrk/barbar.nvim', disable=true }
-
-  use { 'nanozuki/tabby.nvim' }
-
   use {
       'nvim-neo-tree/neo-tree.nvim',
       branch = "v3.x",
