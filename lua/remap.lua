@@ -21,7 +21,6 @@ vim.keymap.set("n", "<A-6>", [[<cmd>tabn 6<cr>]])
 vim.keymap.set("n", "<A-7>", [[<cmd>tabn 7<cr>]])
 vim.keymap.set("n", "<A-8>", [[<cmd>tabn 8<cr>]])
 vim.keymap.set("n", "<A-9>", [[<cmd>tabn 9<cr>]])
-
 -- panel resize
 vim.keymap.set("n", "=", [[<cmd>vertical resize +1<cr>]]) -- increase vertical
 vim.keymap.set("n", "-", [[<cmd>vertical resize -1<cr>]]) -- decrease vertical
@@ -33,3 +32,6 @@ vim.keymap.set("n", "<leader>vv", [[<cmd>vertical wincmd =<cr>]])
 
 -- prevent escape key from cycling buffers
 vim.keymap.set("n", "<Esc>", "", { noremap = false })
+-- esc to exit insert mode for terminals
+vim.keymap.set('t', '<esc>', "<C-\\><C-n>")
+

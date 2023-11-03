@@ -2,9 +2,9 @@
 local jabsbuff = require('jabs')
 
 jabsbuff.setup({
-    position = {'center', 'top'},
+    position = {'center', 'center'},
     relative = 'editor',
-    clip_popup_size = false,
+    clip_popup_size = true,
     width = 80,
     height = 20,
     border = 'single',
@@ -22,20 +22,22 @@ jabsbuff.setup({
         border = 'single',
     },
     highlight = {
-        current = 'TabLineFill',
-        hidden = 'TabLineFill',
-        split = 'NormalNC',
-        alternate = 'TabLineFil',
+        current = 'Title',
+        hidden = 'StatusLineNC',
+        split = 'WarningMsg',
+        alternate = 'StatusLine',
     },
     symbols = {
         current = 'C',
         split = 'S',
         alternate = 'A',
-        hiddle = 'H',
+        hidden = 'H',
         locked = 'L',
         ro = 'R',
         edited = 'E',
         terminal = 'T',
+        default_file = "D",
+        terminal_symbol = ">_"
     },
     keymap = {
         close = '<c-d>',

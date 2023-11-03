@@ -28,4 +28,8 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
-vim.opt.showtabline = 2
+vim.o.showtabline = 2
+
+-- remove number lines 
+vim.api.nvim_command("autocmd TermOpen * setlocal nonumber")
+vim.api.nvim_command("autocmd TermOpen * setlocal signcolumn=no")
