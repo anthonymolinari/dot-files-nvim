@@ -1,3 +1,12 @@
+---@diagnostic disable: undefined-global
+require('telescope').setup({
+    pickers = {
+        buffers = {
+            theme = "ivy"
+        }
+    }
+})
+
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>cs', builtin.colorscheme, {})

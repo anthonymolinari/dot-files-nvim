@@ -31,7 +31,10 @@ vim.keymap.set("n", "<leader>cc", [[<cmd>horizontal wincmd =<cr>]])
 vim.keymap.set("n", "<leader>vv", [[<cmd>vertical wincmd =<cr>]])
 
 -- prevent escape key from cycling buffers
-vim.keymap.set("n", "<Esc>", "", { noremap = false })
+vim.keymap.set("n", "<esc>", "", { noremap = false })
 -- esc to exit insert mode for terminals
 vim.keymap.set('t', '<esc>', "<C-\\><C-n>")
 
+-- additional macros
+vim.keymap.set('n', '<leader>mm', [[<cmd>Mason<cr>]])
+vim.keymap.set('i', '<C-S>', [[<cmd>w<cr>]])
