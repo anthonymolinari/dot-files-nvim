@@ -31,6 +31,8 @@ return require('packer').startup(function(use)
 
   use {'lewis6991/gitsigns.nvim'}
 
+  use {'AckslD/muren.nvim'}
+
   use {
       'nvim-neo-tree/neo-tree.nvim',
       branch = "v3.x",
@@ -71,6 +73,8 @@ return require('packer').startup(function(use)
   use { 'catppuccin/nvim', as = 'catpuccin' }
   use { 'rebelot/kanagawa.nvim' }
   use { 'savq/melange-nvim' }
+  use { 'Mofiqul/vscode.nvim' }
+  use { 'rafamadriz/neon' }
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use('nvim-treesitter/playground')

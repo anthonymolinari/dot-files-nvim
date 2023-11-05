@@ -155,10 +155,20 @@ _G.packer_plugins = {
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/moonlight.nvim",
     url = "https://github.com/shaunsingh/moonlight.nvim"
   },
+  ["muren.nvim"] = {
+    loaded = true,
+    path = "/home/anthony/.local/share/nvim/site/pack/packer/start/muren.nvim",
+    url = "https://github.com/AckslD/muren.nvim"
+  },
   ["neo-tree.nvim"] = {
     loaded = true,
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  neon = {
+    loaded = true,
+    path = "/home/anthony/.local/share/nvim/site/pack/packer/start/neon",
+    url = "https://github.com/rafamadriz/neon"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -230,6 +240,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/anthony/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 

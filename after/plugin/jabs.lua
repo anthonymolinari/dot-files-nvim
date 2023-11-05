@@ -2,7 +2,7 @@
 local jabsbuff = require('jabs')
 
 jabsbuff.setup({
-    position = {'center', 'center'},
+    position = {'center', 'top'},
     relative = 'editor',
     clip_popup_size = true,
     width = 80,
@@ -15,10 +15,10 @@ jabsbuff.setup({
         right = 2,
     },
     sort_mru = true,
-    preview_position = 'left', -- top, bottom, left, right
+    preview_position = 'bottom', -- top, bottom, left, right
     preview = {
-        width = 40,
-        height = 60,
+        width = 100,
+        height = 30,
         border = 'single',
     },
     highlight = {
