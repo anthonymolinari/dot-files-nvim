@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- plugin development
-  use {'/home/anthony/Programming/latex_preview.nvim', disable=false}
+  use {'/home/anthony/Programming/latex_preview.nvim', disable=true}
   -- end development plugins
 
   use { 'nvim-lua/plenary.nvim' }
@@ -78,7 +78,6 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use('nvim-treesitter/playground')
-  use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use {
     'VonHeikemen/lsp-zero.nvim',

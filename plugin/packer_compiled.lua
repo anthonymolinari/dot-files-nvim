@@ -120,11 +120,6 @@ _G.packer_plugins = {
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
   },
-  ["latex_preview.nvim"] = {
-    loaded = true,
-    path = "/home/anthony/.local/share/nvim/site/pack/packer/start/latex_preview.nvim",
-    url = "/home/anthony/Programming/latex_preview.nvim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -230,11 +225,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  undotree = {
-    loaded = true,
-    path = "/home/anthony/.local/share/nvim/site/pack/packer/start/undotree",
-    url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
