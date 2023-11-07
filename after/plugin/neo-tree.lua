@@ -38,6 +38,6 @@ neo_tree.setup({
 })
 local opts = { noremap = true, nowait = true }
 
-vim.keymap.set('n', '<C-b>', "<cmd>Neotree filesystem reveal toggle left<CR>", opts)
+vim.keymap.set('n', '<leader>ft', "<cmd>Neotree filesystem reveal toggle left<CR>", opts)
 vim.keymap.set('n', '<leader>fs', "<cmd>Neotree filesystem reveal float<CR>", opts)
 vim.keymap.set('n', '<leader>pv', "<cmd>Neotree filesystem reveal current<CR>", opts)
