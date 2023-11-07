@@ -11,6 +11,8 @@ lsp.ensure_installed({
     'cssls',
     'zls',
     'gopls',
+    'bashls',
+    'arduino_language_server'
 })
 
 local cmp = require('cmp')
