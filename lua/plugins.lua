@@ -33,6 +33,14 @@ return require('packer').startup(function(use)
 
   use {'AckslD/muren.nvim'}
 
+  use ({ 
+      "epwalsh/obsidian.nvim",
+      tag = "*",
+      requires = {
+          "nvim-lua/plenary.nvim"
+      }
+  })
+
   use {
       'nvim-neo-tree/neo-tree.nvim',
       branch = "v3.x",
