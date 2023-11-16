@@ -14,7 +14,6 @@ return require('packer').startup(function(use)
 
   use { 'nvim-lua/plenary.nvim' }
 
-  use { 'j-morano/buffer_manager.nvim', disable=true }
   use { 'matbme/JABS.nvim'}
 
   use {
@@ -40,6 +39,16 @@ return require('packer').startup(function(use)
           "nvim-lua/plenary.nvim"
       }
   })
+
+  use { 
+      "startup-nvim/startup.nvim",
+      requires = {
+          "nvim-telescope/telescope.nvim",
+          "nvim-lua/plenary.nvim"
+      },
+  }
+
+  use 'f-person/git-blame.nvim'
 
   use {
       'nvim-neo-tree/neo-tree.nvim',
