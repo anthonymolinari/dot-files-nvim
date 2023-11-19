@@ -28,7 +28,6 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  use {'lewis6991/gitsigns.nvim'}
 
   use {'AckslD/muren.nvim'}
 
@@ -48,7 +47,15 @@ return require('packer').startup(function(use)
       },
   }
 
-  use 'f-person/git-blame.nvim'
+  use {'stevearc/overseer.nvim'}
+
+  -- git plugins
+  use {'f-person/git-blame.nvim', disable=true}
+  use {'tpope/vim-fugitive'}
+  use {'lewis6991/gitsigns.nvim'}
+  -- testing vgit
+  use {'tanvirtin/vgit.nvim', disable=true}
+
 
   use {
       'nvim-neo-tree/neo-tree.nvim',
@@ -95,7 +102,8 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use('nvim-treesitter/playground')
-  use('tpope/vim-fugitive')
+
+
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
