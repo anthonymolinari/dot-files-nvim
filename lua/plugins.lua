@@ -50,8 +50,17 @@ return require('packer').startup(function(use)
   use {'stevearc/overseer.nvim'}
 
   -- git plugins
+  use {'sindrets/diffview.nvim'}
   use {'tpope/vim-fugitive'}
   use {'lewis6991/gitsigns.nvim'}
+  use {
+      'NeogitOrg/neogit',
+      requires = {
+        'nvim-lua/plenary.nvim',
+        'nvim-telescope/telescope.nvim',
+        'sindrets/diffview.nvim',
+      },
+  }
 
   use {
       'nvim-neo-tree/neo-tree.nvim',
