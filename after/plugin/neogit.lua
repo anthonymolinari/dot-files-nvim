@@ -3,7 +3,9 @@ local neogit = require('neogit')
 
 neogit.setup({
     mappings = {
-        ["?"] = "HelpPopup",
+        popup = {
+            ["c"] = "CommitPopup",
+        }
     }
 })
 
