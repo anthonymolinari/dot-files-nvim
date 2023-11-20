@@ -9,5 +9,6 @@ neogit.setup({
     }
 })
 
-vim.keymap.set('n', '<leader>ng', function() neogit.open({ kind = "auto" }) end, {});
+vim.keymap.set('n', '<leader>ngs', function() neogit.open({ kind = "auto" }) end, {});
+vim.keymap.set('n', '<leader>ng', function() neogit.open({ kind = "tab" }) end, {});
 vim.keymap.set('n', '<leader>nc', function() neogit.open({ 'commit' }) end, {});
