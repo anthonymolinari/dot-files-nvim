@@ -1,10 +1,10 @@
 ---@diagnostic disable: undefined-global
 local function use_scheme(theme_name)
-    if theme_name == "rose-pine" then
+    if theme_name == "gruvbox" then
         vim.cmd([[colorscheme gruvbox]])
     elseif theme_name == "everforest" then
         vim.cmd([[colorscheme everforest]])
-    elseif theme_name == "gruvbox" then
+    elseif theme_name == "rose-pine" then
         require('rose-pine').setup({
             -- 'auto' | 'main' | 'moon' | 'dawn'
             variant = 'main',
@@ -46,4 +46,4 @@ local function use_scheme(theme_name)
 
 end
 
-use_scheme('melange')
+use_scheme('vs_code')

@@ -50,12 +50,8 @@ return require('packer').startup(function(use)
   use {'stevearc/overseer.nvim'}
 
   -- git plugins
-  use {'f-person/git-blame.nvim', disable=true}
   use {'tpope/vim-fugitive'}
   use {'lewis6991/gitsigns.nvim'}
-  -- testing vgit
-  use {'tanvirtin/vgit.nvim', disable=true}
-
 
   use {
       'nvim-neo-tree/neo-tree.nvim',
