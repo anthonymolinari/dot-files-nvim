@@ -61,7 +61,6 @@ require('gitsigns').setup({
         map('n', '<leader>hR', gs.reset_buffer)
         map('n', '<leader>hp', gs.preview_hunk)
         map('n', '<leader>dt', gs.diffthis)
-        map('n', '<leader>dt', gs.diffthis)
         map('n', '<leader>td', gs.toggle_deleted)
     end,
 })
