@@ -31,7 +31,7 @@ return require('packer').startup(function(use)
 
   use {'AckslD/muren.nvim'}
 
-  use ({ 
+  use ({
       "epwalsh/obsidian.nvim",
       tag = "*",
       requires = {
@@ -39,7 +39,7 @@ return require('packer').startup(function(use)
       }
   })
 
-  use { 
+  use {
       "startup-nvim/startup.nvim",
       requires = {
           "nvim-telescope/telescope.nvim",
@@ -102,7 +102,6 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use('nvim-treesitter/playground')
-
 
   use {
     'VonHeikemen/lsp-zero.nvim',
