@@ -1,6 +1,4 @@
 ---@diagnostic disable: undefined-global
-require('gitsigns').setup()
---[[
 require('gitsigns').setup({
     signcolumn = true,
     numhl = false,
@@ -66,5 +64,4 @@ require('gitsigns').setup({
         map('n', '<leader>td', gs.toggle_deleted)
     end,
 })
-]]--
 
