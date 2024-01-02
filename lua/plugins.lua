@@ -8,10 +8,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- plugin development
-  use {'/home/anthony/Programming/latex_preview.nvim', disable=false}
-  -- end development plugins
-
   use { 'nvim-lua/plenary.nvim' }
 
   use { 'matbme/JABS.nvim'}
