@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- plugin development
-  use {'/home/anthony/Programming/latex_preview.nvim', disable=false}
+  use {'anthonymolinari/latex_preview.nvim', disable=true}
   -- end development plugins
 
   use { 'nvim-lua/plenary.nvim' }
@@ -30,14 +30,6 @@ return require('packer').startup(function(use)
 
 
   use {'AckslD/muren.nvim'}
-
-  use ({
-      "epwalsh/obsidian.nvim",
-      tag = "*",
-      requires = {
-          "nvim-lua/plenary.nvim"
-      }
-  })
 
   use {
       "startup-nvim/startup.nvim",
