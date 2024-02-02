@@ -45,6 +45,17 @@ return require('packer').startup(function(use)
 
   use {'stevearc/overseer.nvim'}
 
+  -- leetcode plugin
+  use ({
+      "kawre/leetcode.nvim",
+      requires = {
+          "nvim-telescope/telescope.nvim",
+          "nvim-lua/plenary.nvim",
+          "MunifTanjim/nui.nvim",
+      }
+ })
+
+
   -- git plugins
   use {'sindrets/diffview.nvim'}
   use {'tpope/vim-fugitive'}
