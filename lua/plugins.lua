@@ -27,14 +27,6 @@ return require('packer').startup(function(use)
 
   use {'AckslD/muren.nvim'}
 
-  use ({
-      "epwalsh/obsidian.nvim",
-      tag = "*",
-      requires = {
-          "nvim-lua/plenary.nvim"
-      }
-  })
-
   use {
       "startup-nvim/startup.nvim",
       requires = {
