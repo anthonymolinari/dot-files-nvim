@@ -1,6 +1,7 @@
 local leetcode = require('leetcode')
 
 leetcode.setup({
+    arg = "leet",
     lang = "python3",
 })
 
