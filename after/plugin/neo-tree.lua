@@ -11,7 +11,6 @@ neo_tree.setup({
     popup_border_style = "rounded",
     enable_fit_status = true,
     enable_diagnostics = true,
-    enable_normal_mode_for_inputs = false,
     open_files_do_no_replace_types = { "terminal", "trouble", "qf" },
     sort_case_insensitive = false,
     sort_function = nil,
