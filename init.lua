@@ -1,3 +1,3 @@
-require('lazy')
 require('set')
 require('remap')
+require('lazy')

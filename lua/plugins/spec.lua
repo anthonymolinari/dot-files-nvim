@@ -1,5 +1,5 @@
 return {
-  'wbthomason/packer.nvim',
+  'wbthomnameon/packer.nvim',
   'nvim-lua/plenary.nvim',
   'matbme/JABS.nvim',
   {
@@ -44,7 +44,7 @@ return {
               's1n7ax/nvim-window-picker',
               tag = '2.*',
               config = function()
-                  require 'window-picker'.setup({
+                  require 'window-picker'.init({
                       filter_rules = {
                           include_current_win = false,
                           autoselect_one = true,
@@ -60,21 +60,21 @@ return {
   },
   -- themes
   {
-    "neanias/everforest-nvim",
+    "neaniname/everforest-nvim",
     config = function()
-        require("everforest").setup()
+        require("everforest").init()
     end,
   },
   "ellisonleao/gruvbox.nvim",
-  { 'rose-pine/neovim', as = 'rose-pine' },
+  { 'rose-pine/neovim', name = 'rose-pine' },
   'shaunsingh/moonlight.nvim',
   'frenzyexists/aquarium-vim',
-  { 'catppuccin/nvim', as = 'catpuccin' },
+  { 'catppuccin/nvim', name = 'catpuccin' },
   'rebelot/kanagawa.nvim',
   'savq/melange-nvim',
   'Mofiqul/vscode.nvim',
   'rafamadriz/neon',
-  {'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'}},
+  {'nvim-treesitter/nvim-treesitter', { build = ':TSUpdate'}},
   'nvim-treesitter/playground',
   {
     'VonHeikemen/lsp-zero.nvim',
@@ -83,12 +83,12 @@ return {
       -- LSP Support
       {'neovim/nvim-lspconfig'},             -- Required
       {                                      -- Optional
-        'williamboman/mason.nvim',
-        run = function()
-          pcall(vim.cmd, 'MasonUpdate')
+        'williamboman/mnameon.nvim',
+        build = function()
+          pcall(vim.cmd, 'MnameonUpdate')
         end,
       },
-      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+      {'williamboman/mnameon-lspconfig.nvim'}, -- Optional
 
       -- Autocompletion
       {'hrsh7th/nvim-cmp'},     -- Required
