@@ -46,4 +46,4 @@ local function use_scheme(theme_name)
 
 end
 
-use_scheme('vs_code')
+use_scheme('everforest')

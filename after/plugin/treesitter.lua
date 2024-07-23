@@ -11,7 +11,17 @@ require'nvim-treesitter.configs'.setup {
       "lua",
       "rust",
       "go",
-      "python"
+      "python",
+      "zig",
+      "bash",
+      "arduino",
+      "cpp",
+      "css",
+      "csv",
+      "dockerfile",
+      "json",
+      "html",
+      "make"
   },
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
