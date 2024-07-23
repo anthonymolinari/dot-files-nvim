@@ -12,8 +12,7 @@ lsp.ensure_installed({
     'zls',
     'gopls',
     'bashls',
-    'ansiblels',
-    'actionlint'
+    'ansiblels'
 })
 
 local cmp = require('cmp')

@@ -24,16 +24,7 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-
   use {'AckslD/muren.nvim'}
-
-  use {
-      "startup-nvim/startup.nvim",
-      requires = {
-          "nvim-telescope/telescope.nvim",
-          "nvim-lua/plenary.nvim"
-      },
-  }
 
   use {'stevearc/overseer.nvim'}
 
